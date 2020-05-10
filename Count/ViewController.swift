@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    //　labelの色の変色
+    //　label(数字)の色の変色
     func number_color(){
         if number < 0 {
             label.textColor = UIColor.red
