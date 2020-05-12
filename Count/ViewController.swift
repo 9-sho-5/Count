@@ -10,15 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var number: Int = 0  // int(整数)という型の変数の名前「number」を使う。初期値は０に設定
-    @IBOutlet var label: UILabel!  //　ストーリーボード上で「label」という名前のUILabelの部分を使う
+    var number: Int = 0
+    @IBOutlet var label: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    //　label(数字)の色の変色
     func number_color(){
         if number < 0 {
             label.textColor = UIColor.red
@@ -29,18 +28,10 @@ class ViewController: UIViewController {
         }
     }
     
-    @IBAction func plus() {   //　func pulusメソッドの中で、プラスボタンを押したときの動作が記述されている
+    @IBAction func plus() {
         
         number = number + 1
-        label.text = String(number)     // numberという変数の中身を取り出して、label.textに表示させる
-        
-//        if number >= 10 {
-//            label.textColor = UIColor.blue
-//        } else if number >= 0 {
-//            label.textColor = UIColor.black
-//        } else if number < 0 {
-//            label.textColor = UIColor.red
-//        }
+        label.text = String(number)
         
         number_color()
     }
@@ -49,14 +40,6 @@ class ViewController: UIViewController {
         
         number = number - 1
         label.text = String(number)
-        
-//        if number < 0 {
-//            label.textColor = UIColor.red
-//        } else if number >= 0 && number <= 10 {
-//            label.textColor = UIColor.black
-//        } else if number > 10{
-//            label.textColor = UIColor.blue
-//        }
         
         number_color()
     }

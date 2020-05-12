@@ -4,11 +4,6 @@
 //
 //  Created by Kusunose Hosho on 2020/04/28.
 //  Copyright © 2020 Kusunose Hosho. All rights reserved.
-//
-
-//                                               //
-//  This Count Application is for iPhone11 Pro   //
-//                                               //
 
 import UIKit
 
